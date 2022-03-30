@@ -23,7 +23,7 @@
 
   <div class="mb-3">
     <%= form.label :body, class: "form-label" %>
-    <%= form.text_area :body, class: 'form-control', rows: 8, data: { controller: 'markdown'} %>
+    <%= form.text_field :body, class: 'form-control', hidden: true, data: {controller: "editor"}  %>
   </div>
 
   <div>
