@@ -1,0 +1,6 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+basic_note:
+  title: Basic Note Title
+  body: The body of basic note.
+  user: mike

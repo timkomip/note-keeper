@@ -1,0 +1,14 @@
+<div class="d-flex flex-row justify-content-between align-items-center mb-4">
+  <h1>Notes</h1>
+  <%= link_to "New note", new_note_path, class: 'btn btn-primary' %>
+</div>
+
+<div class="list-group">
+  <% @notes.each do |note| %>
+    <%= link_to [:edit, note], class: "list-group-item list-group-item-action d-flex flex-row justify-content-between align-items-center border p-4 mb-2" do %>
+      <div><%= note.title %></div>
+      <div><%= note.created_at.strftime "%F" %></div>
+    <% end %>
+  <% end %>
+</div>
+
